@@ -4,13 +4,8 @@ const routerApi = require('./routes');
 const app = express();
 const port = 3000;
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Hello, my express server');
-});
-
-
-app.get('/new-route', (req, res) => {
-  res.send('Hello, Im a new endpoint');
 });
 
 routerApi(app);

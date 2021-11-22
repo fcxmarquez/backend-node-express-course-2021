@@ -5,9 +5,9 @@ const categoriesRouter = require('./categories.router');
 
 function routerApi(app)
 {
-  app.use('/products', productsRouter);
-  app.use('/users', ursersRouter);
-  app.use('/categories', categoriesRouter);
+  app.use('/api/products', productsRouter);
+  app.use('/api/users', ursersRouter);
+  app.use('/api/categories', categoriesRouter);
 }
 
 module.exports = routerApi;
