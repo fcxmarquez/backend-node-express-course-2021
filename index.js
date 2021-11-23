@@ -1,5 +1,6 @@
 const express = require('express');
 const routerApi = require('./routes');
+const { config } = require('./config');
 
 const app = express();
 const port = 3000;
@@ -12,5 +13,5 @@ routerApi(app);
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log(`Listening at http://localhost:${port}`);
+  console.log(`Listening at http://localhost:${config.port}`);
 });
